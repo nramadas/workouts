@@ -1,0 +1,801 @@
+{
+  "days": [
+    {
+      "id": "mon-lower-a",
+      "display": "Lower A",
+      "abbr": "Mon",
+      "exercises": [
+        {
+          "id": "mon-lower-a-w1-jump-rope-rower-incline-walk",
+          "dayId": "mon-lower-a",
+          "section": "warmup",
+          "orderIndex": 0,
+          "name": "Jump rope / rower / incline walk",
+          "prescription": "2-3 min",
+          "notes": "Light sweat. Just raising tissue temperature."
+        },
+        {
+          "id": "mon-lower-a-w2-bodyweight-squats",
+          "dayId": "mon-lower-a",
+          "section": "warmup",
+          "orderIndex": 1,
+          "name": "Bodyweight squats",
+          "prescription": "10 reps",
+          "notes": "Full depth, controlled. Opens hips and ankles."
+        },
+        {
+          "id": "mon-lower-a-w3-squat-ramp-40-working-weight",
+          "dayId": "mon-lower-a",
+          "section": "warmup",
+          "orderIndex": 2,
+          "name": "Squat ramp \u2014 ~40% working weight",
+          "prescription": "8 reps",
+          "notes": "Light and fast. Focus on movement pattern."
+        },
+        {
+          "id": "mon-lower-a-w4-squat-ramp-60-working-weight",
+          "dayId": "mon-lower-a",
+          "section": "warmup",
+          "orderIndex": 3,
+          "name": "Squat ramp \u2014 ~60% working weight",
+          "prescription": "5 reps",
+          "notes": "Moderate. Start bracing properly."
+        },
+        {
+          "id": "mon-lower-a-w5-squat-ramp-80-working-weight",
+          "dayId": "mon-lower-a",
+          "section": "warmup",
+          "orderIndex": 4,
+          "name": "Squat ramp \u2014 ~80% working weight",
+          "prescription": "3 reps",
+          "notes": "Heavy single set. Nervous system primed."
+        },
+        {
+          "id": "mon-lower-a-1-barbell-back-squat-or-goblet-squat",
+          "dayId": "mon-lower-a",
+          "section": "working",
+          "orderIndex": 5,
+          "name": "Barbell Back Squat (or Goblet Squat)",
+          "setsReps": "4 \u00d7 6-8",
+          "rest": "2-3 min",
+          "notes": "Primary compound. Progressive overload is top priority.",
+          "startingWeight": 35.0
+        },
+        {
+          "id": "mon-lower-a-2-leg-press",
+          "dayId": "mon-lower-a",
+          "section": "working",
+          "orderIndex": 6,
+          "name": "Leg Press",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "2 min",
+          "notes": "Secondary volume after squats. No warmup needed.",
+          "startingWeight": 90.0
+        },
+        {
+          "id": "mon-lower-a-3-walking-lunges",
+          "dayId": "mon-lower-a",
+          "section": "working",
+          "orderIndex": 7,
+          "name": "Walking Lunges",
+          "setsReps": "3 \u00d7 10-12/leg",
+          "rest": "90 sec",
+          "notes": "Greater stability + glute demand than reverse lunges.",
+          "startingWeight": 15.0
+        },
+        {
+          "id": "mon-lower-a-4-leg-curl-seated-or-lying",
+          "dayId": "mon-lower-a",
+          "section": "working",
+          "orderIndex": 8,
+          "name": "Leg Curl (Seated or Lying)",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "60-90 sec",
+          "notes": "Direct hamstring work. Non-negotiable.",
+          "startingWeight": 110.0
+        },
+        {
+          "id": "mon-lower-a-5-standing-calf-raise",
+          "dayId": "mon-lower-a",
+          "section": "working",
+          "orderIndex": 9,
+          "name": "Standing Calf Raise",
+          "setsReps": "3 \u00d7 12-15",
+          "rest": "60 sec",
+          "notes": "Full stretch at bottom, pause at top.",
+          "startingWeight": 50.0
+        },
+        {
+          "id": "mon-lower-a-6-hip-abductions",
+          "dayId": "mon-lower-a",
+          "section": "working",
+          "orderIndex": 10,
+          "name": "Hip Abductions",
+          "setsReps": "2 \u00d7 15-20",
+          "rest": "60 sec",
+          "notes": "Accessory \u2014 keep but don't prioritize.",
+          "startingWeight": null
+        },
+        {
+          "id": "mon-lower-a-c1-hanging-leg-raises",
+          "dayId": "mon-lower-a",
+          "section": "core",
+          "orderIndex": 11,
+          "name": "Hanging Leg Raises",
+          "setsReps": "3 \u00d7 10-15",
+          "rest": "45 sec",
+          "notes": "Full range. Don't swing \u2014 control the movement.",
+          "startingWeight": null
+        },
+        {
+          "id": "mon-lower-a-c2-pallof-press",
+          "dayId": "mon-lower-a",
+          "section": "core",
+          "orderIndex": 12,
+          "name": "Pallof Press",
+          "setsReps": "2 \u00d7 12-15/side",
+          "rest": "45 sec",
+          "notes": "Anti-rotation. Hold the press for 1-sec pause.",
+          "startingWeight": null
+        }
+      ]
+    },
+    {
+      "id": "tue-push",
+      "display": "Upper Push",
+      "abbr": "Tue",
+      "exercises": [
+        {
+          "id": "tue-push-w1-jump-rope-rower-incline-walk",
+          "dayId": "tue-push",
+          "section": "warmup",
+          "orderIndex": 0,
+          "name": "Jump rope / rower / incline walk",
+          "prescription": "2-3 min",
+          "notes": "Light sweat."
+        },
+        {
+          "id": "tue-push-w2-band-pull-aparts",
+          "dayId": "tue-push",
+          "section": "warmup",
+          "orderIndex": 1,
+          "name": "Band pull-aparts",
+          "prescription": "15 reps",
+          "notes": "Rear delt + rotator cuff activation before pressing."
+        },
+        {
+          "id": "tue-push-w3-push-ups",
+          "dayId": "tue-push",
+          "section": "warmup",
+          "orderIndex": 2,
+          "name": "Push-ups",
+          "prescription": "10 reps",
+          "notes": "Warms up chest, shoulders, triceps through full ROM."
+        },
+        {
+          "id": "tue-push-w4-incline-db-press-ramp-50-working-wt",
+          "dayId": "tue-push",
+          "section": "warmup",
+          "orderIndex": 3,
+          "name": "Incline DB press ramp \u2014 ~50% working wt",
+          "prescription": "8 reps",
+          "notes": "Light. Groove the movement pattern."
+        },
+        {
+          "id": "tue-push-w5-incline-db-press-ramp-75-working-wt",
+          "dayId": "tue-push",
+          "section": "warmup",
+          "orderIndex": 4,
+          "name": "Incline DB press ramp \u2014 ~75% working wt",
+          "prescription": "5 reps",
+          "notes": "Moderate-heavy. Ready to go."
+        },
+        {
+          "id": "tue-push-1-incline-dumbbell-bench-press",
+          "dayId": "tue-push",
+          "section": "working",
+          "orderIndex": 5,
+          "name": "Incline Dumbbell Bench Press",
+          "setsReps": "4 \u00d7 8-10",
+          "rest": "2-3 min",
+          "notes": "Targets upper chest. DBs add stabilization + ROM.",
+          "startingWeight": 42.5
+        },
+        {
+          "id": "tue-push-2-standing-overhead-press-bb-or-db",
+          "dayId": "tue-push",
+          "section": "working",
+          "orderIndex": 6,
+          "name": "Standing Overhead Press (BB or DB)",
+          "setsReps": "3 \u00d7 8-10",
+          "rest": "2-3 min",
+          "notes": "Primary shoulder compound. One ramp at ~70% first.",
+          "startingWeight": 10.0
+        },
+        {
+          "id": "tue-push-3-flat-dumbbell-bench-or-dips",
+          "dayId": "tue-push",
+          "section": "working",
+          "orderIndex": 7,
+          "name": "Flat Dumbbell Bench or Dips",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "2 min",
+          "notes": "Second pressing angle for chest volume.",
+          "startingWeight": 37.5
+        },
+        {
+          "id": "tue-push-4-lateral-raises",
+          "dayId": "tue-push",
+          "section": "working",
+          "orderIndex": 8,
+          "name": "Lateral Raises",
+          "setsReps": "3 \u00d7 12-15",
+          "rest": "60 sec",
+          "notes": "Medial delt. Light weight, controlled tempo.",
+          "startingWeight": 12.5
+        },
+        {
+          "id": "tue-push-5-tricep-pushdowns-rope-or-bar",
+          "dayId": "tue-push",
+          "section": "working",
+          "orderIndex": 9,
+          "name": "Tricep Pushdowns (Rope or Bar)",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "60 sec",
+          "notes": "One direct tricep movement after pressing.",
+          "startingWeight": 35.0
+        },
+        {
+          "id": "tue-push-6-farmer-s-walk",
+          "dayId": "tue-push",
+          "section": "working",
+          "orderIndex": 10,
+          "name": "Farmer's Walk",
+          "setsReps": "2-3 \u00d7 40-60s",
+          "rest": "90 sec",
+          "notes": "Grip, traps, core stability. Go heavy.",
+          "startingWeight": null
+        }
+      ]
+    },
+    {
+      "id": "wed-pull",
+      "display": "Upper Pull",
+      "abbr": "Wed",
+      "exercises": [
+        {
+          "id": "wed-pull-w1-jump-rope-rower-incline-walk",
+          "dayId": "wed-pull",
+          "section": "warmup",
+          "orderIndex": 0,
+          "name": "Jump rope / rower / incline walk",
+          "prescription": "2-3 min",
+          "notes": "Light sweat."
+        },
+        {
+          "id": "wed-pull-w2-band-pull-aparts",
+          "dayId": "wed-pull",
+          "section": "warmup",
+          "orderIndex": 1,
+          "name": "Band pull-aparts",
+          "prescription": "15 reps",
+          "notes": "Rear delt and rotator cuff activation."
+        },
+        {
+          "id": "wed-pull-w3-dead-hangs",
+          "dayId": "wed-pull",
+          "section": "warmup",
+          "orderIndex": 2,
+          "name": "Dead hangs",
+          "prescription": "20-30 sec",
+          "notes": "Decompresses spine, opens lats, grip activation."
+        },
+        {
+          "id": "wed-pull-w4-pull-up-ramp-bodyweight",
+          "dayId": "wed-pull",
+          "section": "warmup",
+          "orderIndex": 3,
+          "name": "Pull-up ramp \u2014 bodyweight",
+          "prescription": "5 reps",
+          "notes": "Skip if working sets are bodyweight."
+        },
+        {
+          "id": "wed-pull-1-pull-ups-or-weighted-pull-ups",
+          "dayId": "wed-pull",
+          "section": "working",
+          "orderIndex": 4,
+          "name": "Pull-ups (or Weighted Pull-ups)",
+          "setsReps": "4 \u00d7 6-10",
+          "rest": "2-3 min",
+          "notes": "Primary pull. Add weight once you do 10+ clean reps.",
+          "startingWeight": null
+        },
+        {
+          "id": "wed-pull-2-barbell-rows-or-1-arm-db-rows",
+          "dayId": "wed-pull",
+          "section": "working",
+          "orderIndex": 5,
+          "name": "Barbell Rows or 1-Arm DB Rows",
+          "setsReps": "3 \u00d7 8-10",
+          "rest": "2 min",
+          "notes": "Horizontal pull. One ramp at ~70% if using barbell.",
+          "startingWeight": 60.0
+        },
+        {
+          "id": "wed-pull-3-seated-cable-rows",
+          "dayId": "wed-pull",
+          "section": "working",
+          "orderIndex": 6,
+          "name": "Seated Cable Rows",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "90 sec",
+          "notes": "Focus on squeezing the contraction.",
+          "startingWeight": 50.0
+        },
+        {
+          "id": "wed-pull-4-face-pulls",
+          "dayId": "wed-pull",
+          "section": "working",
+          "orderIndex": 7,
+          "name": "Face Pulls",
+          "setsReps": "3 \u00d7 15-20",
+          "rest": "60 sec",
+          "notes": "Rear delts + external rotators. Shoulder health.",
+          "startingWeight": 42.5
+        },
+        {
+          "id": "wed-pull-5-barbell-curls",
+          "dayId": "wed-pull",
+          "section": "working",
+          "orderIndex": 8,
+          "name": "Barbell Curls",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "60 sec",
+          "notes": "One direct bicep movement after pulling.",
+          "startingWeight": 50.0
+        },
+        {
+          "id": "wed-pull-6-forearm-curls",
+          "dayId": "wed-pull",
+          "section": "working",
+          "orderIndex": 9,
+          "name": "Forearm Curls",
+          "setsReps": "2 \u00d7 15-20",
+          "rest": "60 sec",
+          "notes": "Optional \u2014 keep if grip is a priority.",
+          "startingWeight": null
+        }
+      ]
+    },
+    {
+      "id": "thu-lower-b",
+      "display": "Lower B",
+      "abbr": "Thu",
+      "exercises": [
+        {
+          "id": "thu-lower-b-w1-jump-rope-rower-incline-walk",
+          "dayId": "thu-lower-b",
+          "section": "warmup",
+          "orderIndex": 0,
+          "name": "Jump rope / rower / incline walk",
+          "prescription": "2-3 min",
+          "notes": "Light sweat."
+        },
+        {
+          "id": "thu-lower-b-w2-glute-bridges-bodyweight",
+          "dayId": "thu-lower-b",
+          "section": "warmup",
+          "orderIndex": 1,
+          "name": "Glute bridges (bodyweight)",
+          "prescription": "10 reps",
+          "notes": "Activates glutes. 2-sec hold at top."
+        },
+        {
+          "id": "thu-lower-b-w3-rdl-ramp-40-working-weight",
+          "dayId": "thu-lower-b",
+          "section": "warmup",
+          "orderIndex": 2,
+          "name": "RDL ramp \u2014 ~40% working weight",
+          "prescription": "8 reps",
+          "notes": "Light. Feel the hamstring stretch."
+        },
+        {
+          "id": "thu-lower-b-w4-rdl-ramp-60-working-weight",
+          "dayId": "thu-lower-b",
+          "section": "warmup",
+          "orderIndex": 3,
+          "name": "RDL ramp \u2014 ~60% working weight",
+          "prescription": "5 reps",
+          "notes": "Moderate. Dial in the hip hinge."
+        },
+        {
+          "id": "thu-lower-b-w5-rdl-ramp-80-working-weight",
+          "dayId": "thu-lower-b",
+          "section": "warmup",
+          "orderIndex": 4,
+          "name": "RDL ramp \u2014 ~80% working weight",
+          "prescription": "3 reps",
+          "notes": "Heavy single set. Ready to work."
+        },
+        {
+          "id": "thu-lower-b-1-romanian-deadlifts-rdls",
+          "dayId": "thu-lower-b",
+          "section": "working",
+          "orderIndex": 5,
+          "name": "Romanian Deadlifts (RDLs)",
+          "setsReps": "4 \u00d7 8-10",
+          "rest": "2-3 min",
+          "notes": "Posterior chain. Start conservative, focus on stretch.",
+          "startingWeight": 37.5
+        },
+        {
+          "id": "thu-lower-b-2-bulgarian-split-squats",
+          "dayId": "thu-lower-b",
+          "section": "working",
+          "orderIndex": 6,
+          "name": "Bulgarian Split Squats",
+          "setsReps": "3 \u00d7 10-12/leg",
+          "rest": "90 sec",
+          "notes": "Brutal but effective. Start light if new to these.",
+          "startingWeight": 17.5
+        },
+        {
+          "id": "thu-lower-b-3-hip-abduction-seated",
+          "dayId": "thu-lower-b",
+          "section": "working",
+          "orderIndex": 7,
+          "name": "Hip abduction (Seated)",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "60-90 sec",
+          "notes": "Hamstrings handle the frequency and need the volume.",
+          "startingWeight": 150.0
+        },
+        {
+          "id": "thu-lower-b-4-hip-thrust-or-glute-bridge",
+          "dayId": "thu-lower-b",
+          "section": "working",
+          "orderIndex": 8,
+          "name": "Hip Thrust or Glute Bridge",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "90 sec",
+          "notes": "Direct glute work. Complements the RDLs.",
+          "startingWeight": 25.0
+        },
+        {
+          "id": "thu-lower-b-5-seated-calf-raise",
+          "dayId": "thu-lower-b",
+          "section": "working",
+          "orderIndex": 9,
+          "name": "Seated Calf Raise",
+          "setsReps": "3 \u00d7 12-15",
+          "rest": "60 sec",
+          "notes": "Seated = soleus, standing = gastrocnemius.",
+          "startingWeight": 50.0
+        },
+        {
+          "id": "thu-lower-b-c1-ab-wheel-rollouts-or-plank-walkouts",
+          "dayId": "thu-lower-b",
+          "section": "core",
+          "orderIndex": 10,
+          "name": "Ab Wheel Rollouts (or Plank Walkouts)",
+          "setsReps": "3 \u00d7 8-12",
+          "rest": "45 sec",
+          "notes": "Anti-extension. Start from knees if needed.",
+          "startingWeight": null
+        },
+        {
+          "id": "thu-lower-b-c2-cable-woodchops",
+          "dayId": "thu-lower-b",
+          "section": "core",
+          "orderIndex": 11,
+          "name": "Cable Woodchops",
+          "setsReps": "2 \u00d7 12-15/side",
+          "rest": "45 sec",
+          "notes": "Obliques through rotation. Controlled, not explosive.",
+          "startingWeight": null
+        }
+      ]
+    },
+    {
+      "id": "fri-upper-full",
+      "display": "Upper Full",
+      "abbr": "Fri",
+      "exercises": [
+        {
+          "id": "fri-upper-full-w1-jump-rope-rower-incline-walk",
+          "dayId": "fri-upper-full",
+          "section": "warmup",
+          "orderIndex": 0,
+          "name": "Jump rope / rower / incline walk",
+          "prescription": "2-3 min",
+          "notes": "Light sweat."
+        },
+        {
+          "id": "fri-upper-full-w2-band-pull-aparts",
+          "dayId": "fri-upper-full",
+          "section": "warmup",
+          "orderIndex": 1,
+          "name": "Band pull-aparts",
+          "prescription": "15 reps",
+          "notes": "Shoulder activation for pressing and pulling."
+        },
+        {
+          "id": "fri-upper-full-w3-push-ups",
+          "dayId": "fri-upper-full",
+          "section": "warmup",
+          "orderIndex": 2,
+          "name": "Push-ups",
+          "prescription": "10 reps",
+          "notes": "Warms up pressing muscles."
+        },
+        {
+          "id": "fri-upper-full-w4-bench-ramp-50-working-weight",
+          "dayId": "fri-upper-full",
+          "section": "warmup",
+          "orderIndex": 3,
+          "name": "Bench ramp \u2014 ~50% working weight",
+          "prescription": "8 reps",
+          "notes": "Light. Groove the pattern."
+        },
+        {
+          "id": "fri-upper-full-w5-bench-ramp-75-working-weight",
+          "dayId": "fri-upper-full",
+          "section": "warmup",
+          "orderIndex": 4,
+          "name": "Bench ramp \u2014 ~75% working weight",
+          "prescription": "5 reps",
+          "notes": "Ready to go."
+        },
+        {
+          "id": "fri-upper-full-1-barbell-or-db-bench-press-flat",
+          "dayId": "fri-upper-full",
+          "section": "working",
+          "orderIndex": 5,
+          "name": "Barbell or DB Bench Press (Flat)",
+          "setsReps": "3 \u00d7 8-10",
+          "rest": "2-3 min",
+          "notes": "Second chest stimulus for the week.",
+          "startingWeight": 35.0
+        },
+        {
+          "id": "fri-upper-full-2-cable-rows-or-chest-supported-rows",
+          "dayId": "fri-upper-full",
+          "section": "working",
+          "orderIndex": 6,
+          "name": "Cable Rows or Chest-Supported Rows",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "90 sec",
+          "notes": "Second back stimulus for the week.",
+          "startingWeight": 80.0
+        },
+        {
+          "id": "fri-upper-full-3-seated-dumbbell-shoulder-press",
+          "dayId": "fri-upper-full",
+          "section": "working",
+          "orderIndex": 7,
+          "name": "Seated Dumbbell Shoulder Press",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "2 min",
+          "notes": "Second shoulder stimulus for the week.",
+          "startingWeight": 40.0
+        },
+        {
+          "id": "fri-upper-full-4-lat-pulldowns",
+          "dayId": "fri-upper-full",
+          "section": "working",
+          "orderIndex": 8,
+          "name": "Lat Pulldowns",
+          "setsReps": "3 \u00d7 10-12",
+          "rest": "90 sec",
+          "notes": "Complements pull-ups from Wednesday.",
+          "startingWeight": 50.0
+        },
+        {
+          "id": "fri-upper-full-5-hammer-curls",
+          "dayId": "fri-upper-full",
+          "section": "working",
+          "orderIndex": 9,
+          "name": "Hammer Curls",
+          "setsReps": "2 \u00d7 10-12",
+          "rest": "60 sec",
+          "notes": "Brachialis + brachioradialis. Different angle.",
+          "startingWeight": null
+        },
+        {
+          "id": "fri-upper-full-6-overhead-tricep-ext-cable-or-db",
+          "dayId": "fri-upper-full",
+          "section": "working",
+          "orderIndex": 10,
+          "name": "Overhead Tricep Ext. (Cable or DB)",
+          "setsReps": "2 \u00d7 10-12",
+          "rest": "60 sec",
+          "notes": "Long head emphasis. Different from pushdowns.",
+          "startingWeight": null
+        },
+        {
+          "id": "fri-upper-full-7-shrugs",
+          "dayId": "fri-upper-full",
+          "section": "working",
+          "orderIndex": 11,
+          "name": "Shrugs",
+          "setsReps": "3 \u00d7 12-15",
+          "rest": "60 sec",
+          "notes": "Trap development.",
+          "startingWeight": null
+        },
+        {
+          "id": "fri-upper-full-8-farmer-s-walk",
+          "dayId": "fri-upper-full",
+          "section": "working",
+          "orderIndex": 12,
+          "name": "Farmer's Walk",
+          "setsReps": "2-3 \u00d7 40-60s",
+          "rest": "90 sec",
+          "notes": "Close out the week heavy.",
+          "startingWeight": null
+        }
+      ]
+    },
+    {
+      "id": "sat-optional",
+      "display": "Saturday",
+      "abbr": "Sat",
+      "exercises": [
+        {
+          "id": "sat-optional-1-outdoor-walk-or-incline-treadmill",
+          "dayId": "sat-optional",
+          "section": "cardio",
+          "orderIndex": 0,
+          "name": "Outdoor walk (or incline treadmill)",
+          "prescription": "30-40 min",
+          "notes": "LISS only. Conversational pace. Doubles as warmup for lifting. Sunlight for vit D."
+        },
+        {
+          "id": "sat-optional-1-deadlift-or-rdl-variation",
+          "dayId": "sat-optional",
+          "section": "working",
+          "orderIndex": 1,
+          "name": "Deadlift or RDL Variation",
+          "setsReps": "3-4 \u00d7 6-8",
+          "rest": "2-3 min",
+          "notes": "One ramp at ~70% first. Alternate DL and RDL.",
+          "startingWeight": null
+        },
+        {
+          "id": "sat-optional-2-ss-bicep-curls-tricep-pushdowns",
+          "dayId": "sat-optional",
+          "section": "working",
+          "orderIndex": 2,
+          "name": "SS: Bicep Curls + Tricep Pushdowns",
+          "setsReps": "3 \u00d7 10-12 ea",
+          "rest": "60 sec",
+          "notes": "Superset to save time.",
+          "startingWeight": null
+        },
+        {
+          "id": "sat-optional-3-ss-hammer-curls-oh-tricep-ext",
+          "dayId": "sat-optional",
+          "section": "working",
+          "orderIndex": 3,
+          "name": "SS: Hammer Curls + OH Tricep Ext.",
+          "setsReps": "3 \u00d7 10-12 ea",
+          "rest": "60 sec",
+          "notes": "Different angles for complete arm development.",
+          "startingWeight": null
+        },
+        {
+          "id": "sat-optional-4-lagging-body-part-your-call",
+          "dayId": "sat-optional",
+          "section": "working",
+          "orderIndex": 4,
+          "name": "Lagging body part (your call)",
+          "setsReps": "2-3 \u00d7 10-15",
+          "rest": "60 sec",
+          "notes": "Rotate focus as weaknesses change.",
+          "startingWeight": null
+        }
+      ]
+    }
+  ],
+  "muscleGroups": [
+    {
+      "name": "Quads",
+      "setsPerWeek": "16-17",
+      "frequency": "2\u00d7 (Mon + Thu)"
+    },
+    {
+      "name": "Hamstrings",
+      "setsPerWeek": "10",
+      "frequency": "2\u00d7 (Mon + Thu)"
+    },
+    {
+      "name": "Glutes",
+      "setsPerWeek": "10-13",
+      "frequency": "2\u00d7 (Mon + Thu)"
+    },
+    {
+      "name": "Calves",
+      "setsPerWeek": "6",
+      "frequency": "2\u00d7 (Mon + Thu)"
+    },
+    {
+      "name": "Chest",
+      "setsPerWeek": "13-14",
+      "frequency": "2\u00d7 (Tue + Fri)"
+    },
+    {
+      "name": "Back",
+      "setsPerWeek": "13-14",
+      "frequency": "2\u00d7 (Wed + Fri)"
+    },
+    {
+      "name": "Shoulders",
+      "setsPerWeek": "12-13",
+      "frequency": "2\u00d7 (Tue + Fri + face pulls Wed)"
+    },
+    {
+      "name": "Biceps",
+      "setsPerWeek": "5 direct + pulling",
+      "frequency": "2\u00d7 (Wed + Fri)"
+    },
+    {
+      "name": "Triceps",
+      "setsPerWeek": "5 direct + pressing",
+      "frequency": "2\u00d7 (Tue + Fri)"
+    },
+    {
+      "name": "Core",
+      "setsPerWeek": "10 direct + compounds",
+      "frequency": "2\u00d7 (Mon + Thu)"
+    },
+    {
+      "name": "Traps / Grip",
+      "setsPerWeek": "7-9",
+      "frequency": "2-3\u00d7 (farmer walks + shrugs)"
+    }
+  ],
+  "warmupRules": [
+    {
+      "rule": "General warmup (2-3 min)",
+      "detail": "Jump rope, rower, or incline walk. Just enough to break a light sweat."
+    },
+    {
+      "rule": "Ramp sets on first compound (2-3 min)",
+      "detail": "2-3 sets at ~40% \u2192 ~60% \u2192 ~80%. Activation, not fatigue."
+    },
+    {
+      "rule": "Mid-session ramp",
+      "detail": "If jumping to a different heavy compound, one set at ~70% first."
+    },
+    {
+      "rule": "Skip",
+      "detail": "Foam rolling and static stretching before lifting. Save for post-workout."
+    }
+  ],
+  "executionReminders": [
+    {
+      "rule": "Eccentric tempo",
+      "detail": "2-3 seconds on every lowering phase."
+    },
+    {
+      "rule": "Proximity to failure",
+      "detail": "Every working set within 1-2 reps of true failure."
+    },
+    {
+      "rule": "Progressive overload",
+      "detail": "Beat your logbook each session \u2014 one more rep or small weight increase."
+    },
+    {
+      "rule": "Rest periods",
+      "detail": "2-3 min for heavy compounds, 60-90 sec for accessories."
+    },
+    {
+      "rule": "Track everything",
+      "detail": "If it's not in the logbook, it didn't happen."
+    },
+    {
+      "rule": "If running long",
+      "detail": "Cut the last accessory, never the early compounds."
+    }
+  ]
+}

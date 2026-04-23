@@ -1,0 +1,1103 @@
+{
+  "weeklyGrid": [
+    {
+      "day": "Monday",
+      "abbr": "Mon",
+      "intensity": "hard",
+      "focus": "Session A"
+    },
+    {
+      "day": "Tuesday",
+      "abbr": "Tue",
+      "intensity": "moderate",
+      "focus": "Light combo"
+    },
+    {
+      "day": "Wednesday",
+      "abbr": "Wed",
+      "intensity": "gentle",
+      "focus": "Pre-leg gentle"
+    },
+    {
+      "day": "Thursday",
+      "abbr": "Thu",
+      "intensity": "hard",
+      "focus": "Long combined"
+    },
+    {
+      "day": "Friday",
+      "abbr": "Fri",
+      "intensity": "hard",
+      "focus": "Session B"
+    },
+    {
+      "day": "Saturday",
+      "abbr": "Sat",
+      "intensity": "moderate",
+      "focus": "Light combo"
+    },
+    {
+      "day": "Sunday",
+      "abbr": "Sun",
+      "intensity": "gentle",
+      "focus": "Pre-leg gentle"
+    }
+  ],
+  "sessions": [
+    {
+      "day": "Monday",
+      "title": "Session A \u2014 Posterior chain, adductors, ankle rebalance",
+      "meta": "Post-leg \u00b7 22 min",
+      "note": "Morning leg session is done \u2014 next one is Thursday (about 60 hours out). Push intensity, but scale by feel if residual fatigue is high. Loaded calf work lives here because calf DOMS peaks at 24\u201348h and Thu squats shouldn't be compromised.",
+      "exercises": [
+        {
+          "name": "Hip CARs",
+          "dose": "3 ea direction / side",
+          "ref": "ex-hip-cars"
+        },
+        {
+          "name": "Ankle CARs (plantarflexion-biased)",
+          "dose": "5 ea direction / side",
+          "ref": "ex-ankle-cars"
+        },
+        {
+          "name": "90/90 stretch",
+          "dose": "90s / side \u00d7 2",
+          "ref": "ex-9090"
+        },
+        {
+          "name": "Half-split hamstring stretch",
+          "dose": "90s / side",
+          "ref": "ex-half-split"
+        },
+        {
+          "name": "Frog pose",
+          "dose": "2 min",
+          "ref": "ex-frog"
+        },
+        {
+          "name": "Cossack squat",
+          "dose": "5 / side, slow",
+          "ref": "ex-cossack"
+        },
+        {
+          "name": "Kneeling shin stretch",
+          "dose": "60s",
+          "ref": "ex-kneeling-shin"
+        },
+        {
+          "name": "Weighted calf raise + pause",
+          "dose": "3 \u00d7 8, 2s top hold",
+          "ref": "ex-calf-raise"
+        },
+        {
+          "name": "Jefferson curl",
+          "dose": "3 \u00d7 6, light load",
+          "ref": "ex-jefferson"
+        },
+        {
+          "name": "Deep squat hold",
+          "dose": "2 min total",
+          "ref": "ex-deep-squat"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "title": "Light combo \u2014 recovery & maintenance",
+      "meta": "Moderate \u00b7 16 min",
+      "note": "Middle distance from both leg days (36 hrs either direction). Keep it moderate \u2014 nothing that'll linger into Thursday morning. Active plantarflexion only; no loaded calf work this close to legs.",
+      "exercises": [
+        {
+          "name": "Hip CARs",
+          "dose": "3 ea direction / side",
+          "ref": "ex-hip-cars"
+        },
+        {
+          "name": "Ankle CARs (plantarflexion-biased)",
+          "dose": "5 ea direction / side",
+          "ref": "ex-ankle-cars"
+        },
+        {
+          "name": "Supine figure-4",
+          "dose": "60s / side",
+          "ref": "ex-figure4"
+        },
+        {
+          "name": "Couch stretch (passive)",
+          "dose": "90s / side",
+          "ref": "ex-couch"
+        },
+        {
+          "name": "Half-split hamstring stretch",
+          "dose": "60s / side",
+          "ref": "ex-half-split"
+        },
+        {
+          "name": "Kneeling shin stretch",
+          "dose": "60s",
+          "ref": "ex-kneeling-shin"
+        },
+        {
+          "name": "Cossack squat",
+          "dose": "5 / side",
+          "ref": "ex-cossack"
+        },
+        {
+          "name": "T-spine extension on roller",
+          "dose": "90s",
+          "ref": "ex-tspine"
+        },
+        {
+          "name": "Deep squat hold",
+          "dose": "90s",
+          "ref": "ex-deep-squat"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "title": "Pre-leg gentle \u2014 anterior ankle emphasis",
+      "meta": "Gentle \u00b7 12 min",
+      "note": "Thursday is legs. No loaded calf work \u2014 DOMS would land on tomorrow's squat. But anterior ankle lengthening and active plantarflexion are both safe here and directly serve the rebalance goal. None of this should make you sore.",
+      "exercises": [
+        {
+          "name": "Ankle CARs (plantarflexion-biased)",
+          "dose": "5 ea direction / side",
+          "ref": "ex-ankle-cars"
+        },
+        {
+          "name": "Kneeling shin stretch",
+          "dose": "90s",
+          "ref": "ex-kneeling-shin"
+        },
+        {
+          "name": "Seated tibialis anterior stretch",
+          "dose": "60s / side",
+          "ref": "ex-tib-ant"
+        },
+        {
+          "name": "Hard active toe points",
+          "dose": "5 \u00d7 8s holds",
+          "ref": "ex-active-points"
+        },
+        {
+          "name": "Banded posterior talar glide (optional)",
+          "dose": "10 / side",
+          "ref": "ex-talar-glide"
+        },
+        {
+          "name": "Pigeon pose",
+          "dose": "60s / side",
+          "ref": "ex-pigeon"
+        },
+        {
+          "name": "Couch stretch (passive)",
+          "dose": "60s / side",
+          "ref": "ex-couch"
+        },
+        {
+          "name": "Deep squat hold",
+          "dose": "90s",
+          "ref": "ex-deep-squat"
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "title": "Long combined \u2014 A & B",
+      "meta": "Post-leg \u00b7 28\u201332 min",
+      "note": "The week's biggest session. Morning legs are done and the next ones aren't until Monday \u2014 3.5 days of buffer, the longest of the week. Full hold times, heaviest calf work of the week. Good day for PNF/contract-relax on hamstrings and adductors once past week 6.",
+      "exercises": [
+        {
+          "name": "Hip CARs + cat-cow",
+          "dose": "3/side + 10 reps",
+          "ref": "ex-hip-cars"
+        },
+        {
+          "name": "Ankle CARs (plantarflexion-biased)",
+          "dose": "5 ea direction / side",
+          "ref": "ex-ankle-cars"
+        },
+        {
+          "name": "90/90 stretch",
+          "dose": "90s / side \u00d7 2",
+          "ref": "ex-9090"
+        },
+        {
+          "name": "Half-split hamstring stretch",
+          "dose": "90s / side",
+          "ref": "ex-half-split"
+        },
+        {
+          "name": "Frog pose",
+          "dose": "2 min",
+          "ref": "ex-frog"
+        },
+        {
+          "name": "Pigeon pose",
+          "dose": "90s / side",
+          "ref": "ex-pigeon"
+        },
+        {
+          "name": "Couch stretch",
+          "dose": "90s / side",
+          "ref": "ex-couch"
+        },
+        {
+          "name": "Cossack squat",
+          "dose": "5 / side",
+          "ref": "ex-cossack"
+        },
+        {
+          "name": "Kneeling shin stretch",
+          "dose": "90s",
+          "ref": "ex-kneeling-shin"
+        },
+        {
+          "name": "Calf raises \u2014 single-leg eccentric",
+          "dose": "3 \u00d7 6 / side",
+          "ref": "ex-calf-raise-sl"
+        },
+        {
+          "name": "Banded posterior talar glide (optional)",
+          "dose": "10 / side",
+          "ref": "ex-talar-glide"
+        },
+        {
+          "name": "Jefferson curl",
+          "dose": "3 \u00d7 6, light load",
+          "ref": "ex-jefferson"
+        },
+        {
+          "name": "T-spine extension on roller",
+          "dose": "2 min",
+          "ref": "ex-tspine"
+        },
+        {
+          "name": "Deep squat hold",
+          "dose": "2 min",
+          "ref": "ex-deep-squat"
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "title": "Session B \u2014 Hip flexors, glutes, quads, t-spine",
+      "meta": "Full session \u00b7 22 min",
+      "note": "36 hours since Thu legs, 60 hours until Mon legs. Solid buffer either way. Session B complements Session A from Monday \u2014 different tissues, different emphasis. If hips feel trashed from Thu, swap in Session A instead. Active plantarflexion drills here, but no loaded calf work \u2014 DOMS would land on Monday's squat.",
+      "exercises": [
+        {
+          "name": "Hip CARs + cat-cow",
+          "dose": "3/side + 10 reps",
+          "ref": "ex-hip-cars"
+        },
+        {
+          "name": "Ankle CARs (plantarflexion-biased)",
+          "dose": "5 ea direction / side",
+          "ref": "ex-ankle-cars"
+        },
+        {
+          "name": "Couch stretch",
+          "dose": "90s / side \u00d7 2",
+          "ref": "ex-couch"
+        },
+        {
+          "name": "Pigeon pose",
+          "dose": "90s / side \u00d7 2",
+          "ref": "ex-pigeon"
+        },
+        {
+          "name": "Half-kneeling hip flexor + PPT",
+          "dose": "60s / side",
+          "ref": "ex-hip-flexor-ppt"
+        },
+        {
+          "name": "Side-lying quad stretch",
+          "dose": "90s / side",
+          "ref": "ex-side-quad"
+        },
+        {
+          "name": "Thread the needle",
+          "dose": "8 / side slow",
+          "ref": "ex-thread"
+        },
+        {
+          "name": "Kneeling shin stretch",
+          "dose": "60s",
+          "ref": "ex-kneeling-shin"
+        },
+        {
+          "name": "Hard active toe points",
+          "dose": "5 \u00d7 8s holds",
+          "ref": "ex-active-points"
+        },
+        {
+          "name": "T-spine extension on roller",
+          "dose": "2 min",
+          "ref": "ex-tspine"
+        },
+        {
+          "name": "90/90 transitions",
+          "dose": "10 slow reps",
+          "ref": "ex-9090-trans"
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "title": "Light combo \u2014 recovery & maintenance",
+      "meta": "Moderate \u00b7 16 min",
+      "note": "Monday legs are 36 hours out \u2014 not enough buffer for anything that'll leave DOMS. Moderate work only. Pick the tightest areas from Fri's Session B.",
+      "exercises": [
+        {
+          "name": "Hip CARs",
+          "dose": "3 ea direction / side",
+          "ref": "ex-hip-cars"
+        },
+        {
+          "name": "Ankle CARs (plantarflexion-biased)",
+          "dose": "5 ea direction / side",
+          "ref": "ex-ankle-cars"
+        },
+        {
+          "name": "Supine figure-4",
+          "dose": "60s / side",
+          "ref": "ex-figure4"
+        },
+        {
+          "name": "Couch stretch (passive)",
+          "dose": "90s / side",
+          "ref": "ex-couch"
+        },
+        {
+          "name": "90/90 stretch",
+          "dose": "60s / side",
+          "ref": "ex-9090"
+        },
+        {
+          "name": "Kneeling shin stretch",
+          "dose": "60s",
+          "ref": "ex-kneeling-shin"
+        },
+        {
+          "name": "Cossack squat",
+          "dose": "5 / side",
+          "ref": "ex-cossack"
+        },
+        {
+          "name": "T-spine extension on roller",
+          "dose": "90s",
+          "ref": "ex-tspine"
+        },
+        {
+          "name": "Deep squat hold",
+          "dose": "90s",
+          "ref": "ex-deep-squat"
+        }
+      ]
+    },
+    {
+      "day": "Sunday",
+      "title": "Pre-leg gentle",
+      "meta": "Gentle \u00b7 12 min",
+      "note": "Monday is legs. Keep it easy \u2014 no DOMS-inducing end-range work.",
+      "exercises": [
+        {
+          "name": "5 min walk or easy bike",
+          "dose": "warm-up",
+          "ref": null
+        },
+        {
+          "name": "Ankle CARs (plantarflexion-biased)",
+          "dose": "5 ea direction / side, gentle",
+          "ref": "ex-ankle-cars"
+        },
+        {
+          "name": "Supine figure-4",
+          "dose": "60s / side",
+          "ref": "ex-figure4"
+        },
+        {
+          "name": "Couch stretch (passive)",
+          "dose": "90s / side",
+          "ref": "ex-couch"
+        },
+        {
+          "name": "Seated forward fold",
+          "dose": "90s",
+          "ref": "ex-forward-fold"
+        },
+        {
+          "name": "Child's pose with side reach",
+          "dose": "60s / side",
+          "ref": "ex-childs-pose"
+        },
+        {
+          "name": "Assisted deep squat hold",
+          "dose": "2 \u00d7 30s",
+          "ref": "ex-deep-squat"
+        }
+      ]
+    }
+  ],
+  "library": [
+    {
+      "id": "ex-ankle-cars",
+      "title": "Ankle CARs (plantarflexion-biased)",
+      "target": "Neural end-range plantarflexion + inversion/eversion control",
+      "dose": "5 ea direction / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Seated with one leg extended, foot off the floor. Or supine with leg raised. The foot needs to be free in space."
+        },
+        {
+          "label": "Execution",
+          "content": "Deliberately trace the largest circle you can with the foot \u2014 but bias the movement into <em>plantarflexion</em> (point), then inversion (sole turns inward), then eversion (sole turns outward). Move slowly. Reverse direction. This is different from casual \"ankle circles\" \u2014 each rep should feel like you're drawing carefully through end ranges, especially the pointed-toe range where you're currently weakest."
+        },
+        {
+          "label": "Cues",
+          "content": "Spend extra time at full plantarflexion \u2014 push the toes down as hard as you can, feel the front of the ankle stretch, the calf contract. Keep the leg and knee still; movement is entirely at the ankle."
+        },
+        {
+          "label": "Why this over ankle circles",
+          "content": "Ordinary ankle circles distribute effort evenly through the range. Given your pattern (abundant dorsiflexion, limited plantarflexion), you need disproportionate attention at the pointed end."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=ankle+CARs+controlled+articular+rotations+tutorial"
+    },
+    {
+      "id": "ex-cat-cow",
+      "title": "Cat-cow",
+      "target": "Spine, t-spine",
+      "dose": "10 slow reps",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Quadruped \u2014 hands under shoulders, knees under hips."
+        },
+        {
+          "label": "Execution",
+          "content": "Inhale: drop belly, lift chest and tailbone (cow). Exhale: round spine, tuck chin and tail (cat). Move with breath."
+        },
+        {
+          "label": "Cues",
+          "content": "Articulate segment by segment. Don't just hinge at the lumbar \u2014 move the whole spine, including the upper back."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=cat+cow+stretch+tutorial"
+    },
+    {
+      "id": "ex-childs-pose",
+      "title": "Child's pose with side reach",
+      "target": "Lats, obliques, hips",
+      "dose": "60s / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Kneel with big toes together, knees wide. Sit back onto heels. Extend both arms forward on the floor."
+        },
+        {
+          "label": "Execution",
+          "content": "Walk both hands toward the right, feeling a stretch through the left side of the torso. Hold. Walk hands to the left and switch."
+        },
+        {
+          "label": "Cues",
+          "content": "Keep the opposite hip anchored toward the heel \u2014 don't let it lift as you reach."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=childs+pose+side+stretch+tutorial"
+    },
+    {
+      "id": "ex-cossack",
+      "title": "Cossack squat",
+      "target": "Adductors, hips, ankles",
+      "dose": "5 / side, slow",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Stand with feet very wide (wider than squat stance), toes slightly turned out."
+        },
+        {
+          "label": "Execution",
+          "content": "Shift weight to one side, bending that knee deeply into a deep side-squat. The opposite leg stays straight with toes pointing up (heel on floor). Keep chest up. Pause at the bottom. Drive through the bent leg to shift to the other side."
+        },
+        {
+          "label": "Cues",
+          "content": "Bent-side heel stays flat on the floor. Knee tracks over the toes \u2014 don't let it cave in. Torso stays as upright as possible."
+        },
+        {
+          "label": "Common mistake",
+          "content": "Rushing. The value is in the slow bottom position \u2014 that's where the adductor stretch actually happens."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=cossack+squat+mobility+tutorial"
+    },
+    {
+      "id": "ex-couch",
+      "title": "Couch stretch",
+      "target": "Quads, hip flexors",
+      "dose": "90s / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Kneel with one shin flat against a wall or couch \u2014 sole of foot running up the wall, knee in the corner where wall meets floor. Bring the other foot forward into a lunge position."
+        },
+        {
+          "label": "Execution",
+          "content": "For the passive version, rest hands on the front knee, sit tall, and sink hips forward. Posterior pelvic tilt (tuck tailbone under) intensifies the stretch and protects the lower back."
+        },
+        {
+          "label": "Cues",
+          "content": "If too intense, move the kneeling knee further from the wall. Don't arch your lower back to escape the stretch \u2014 that's the signal to regress the position."
+        },
+        {
+          "label": "Common mistake",
+          "content": "Anterior pelvic tilt. You'll feel it in your lower back instead of your quad/hip flexor, which means you're not actually stretching what you're supposed to."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=couch+stretch+tutorial+hip+flexor"
+    },
+    {
+      "id": "ex-deep-squat",
+      "title": "Deep squat hold",
+      "target": "Hips, ankles, adductors, full lower body",
+      "dose": "Build to 2 min",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Squat all the way down \u2014 feet flat, heels down, hips below knees. Hands free, or hold a doorframe/pole/rack upright for support if needed."
+        },
+        {
+          "label": "Execution",
+          "content": "Stay there. Breathe. Let your body settle. You can gently rock side to side or use elbows against the inside of the knees to press them out."
+        },
+        {
+          "label": "Cues",
+          "content": "If heels lift, elevate them on a small plate or folded towel until you build range. Post-workout is easier than cold \u2014 warm up first if doing this early in a session."
+        },
+        {
+          "label": "Common mistake",
+          "content": "Collapsing forward. Try to sit tall, even if it means a shorter hold."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=deep+squat+hold+mobility"
+    },
+    {
+      "id": "ex-figure4",
+      "title": "Supine figure-4",
+      "target": "Glutes, piriformis, outer hip",
+      "dose": "60s / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Lie on your back, knees bent, feet flat on the floor."
+        },
+        {
+          "label": "Execution",
+          "content": "Cross the right ankle over the left knee to form a \"4\" shape. Reach both hands through the gap (one around the back of the left thigh, one through) and pull the left thigh toward your chest. You should feel the stretch in the right glute/outer hip."
+        },
+        {
+          "label": "Cues",
+          "content": "Keep the right foot flexed (toes pulled back) to protect the knee. Head and shoulders stay on the floor \u2014 don't crunch up to meet your hands."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=supine+figure+4+stretch+tutorial"
+    },
+    {
+      "id": "ex-forward-fold",
+      "title": "Seated forward fold",
+      "target": "Hamstrings, lower back, calves",
+      "dose": "90s",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Sit on the floor with legs extended straight in front. If hamstrings are very tight, sit on a folded towel or block to tilt the pelvis forward."
+        },
+        {
+          "label": "Execution",
+          "content": "Hinge forward <em>from the hips</em>, not the lower back. Reach hands toward feet. Don't worry about touching toes \u2014 the point is sustained hamstring tension, not the visual."
+        },
+        {
+          "label": "Cues",
+          "content": "Spine stays relatively long. Rounded upper back is fine. Rounded <em>lower</em> back means you've gone too far \u2014 back off. Knees can soften slightly if needed."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=seated+forward+fold+hamstring+stretch"
+    },
+    {
+      "id": "ex-frog",
+      "title": "Frog pose",
+      "target": "Adductors",
+      "dose": "Build to 2 min",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Start on all fours. Walk knees out wide, keeping shins in line with thighs. Feet flexed \u2014 the outside edges of your feet rest on the floor."
+        },
+        {
+          "label": "Execution",
+          "content": "Lower from hands to forearms. Push hips slightly back toward heels to deepen the adductor stretch. Hold and breathe."
+        },
+        {
+          "label": "Cues",
+          "content": "This is an intense stretch. Start with 30\u201360s and build. Do it on a padded surface (yoga mat, rug) \u2014 bare knees on hardwood is miserable."
+        },
+        {
+          "label": "Warning",
+          "content": "If you feel anything in the knee <em>joint</em> (not the surrounding muscle), back off and narrow your stance. Frog can irritate MCLs in some people."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=frog+pose+stretch+adductors"
+    },
+    {
+      "id": "ex-hip-flexor-ppt",
+      "title": "Half-kneeling hip flexor stretch (with posterior pelvic tilt)",
+      "target": "Hip flexors, quads",
+      "dose": "60s / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Half-kneeling position \u2014 one knee on the floor, other foot forward in a lunge stance. Padding under the back knee."
+        },
+        {
+          "label": "Execution",
+          "content": "Squeeze the glute of the kneeling-side leg hard. Tuck your tailbone under (posterior pelvic tilt). <em>Then</em>, holding that tilt, shift your weight slightly forward over the front leg. The stretch should be felt at the very front of the kneeling-side hip."
+        },
+        {
+          "label": "Cues",
+          "content": "The posterior pelvic tilt is the whole point. Without it, you just lean forward and compress your lumbar spine \u2014 no actual hip flexor stretch happens. If you feel this in your lower back, you're doing it wrong."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=half+kneeling+hip+flexor+stretch+posterior+pelvic+tilt"
+    },
+    {
+      "id": "ex-half-split",
+      "title": "Half-split hamstring stretch",
+      "target": "Hamstrings",
+      "dose": "90s / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Start kneeling. Extend one leg straight out in front, heel on the floor, toes pointing up."
+        },
+        {
+          "label": "Execution",
+          "content": "Hinge at the hips, keeping your back as flat as possible, folding forward over the extended leg. Hands can rest on blocks, a chair, or the floor depending on flexibility."
+        },
+        {
+          "label": "Cues",
+          "content": "Flat back is more important than reaching far. If you're rounding, hinge less \u2014 the target is the hamstring, not the destination. Keep the extended leg straight; slight knee bend at first is okay if locked-out causes sharp pain."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=half+split+hamstring+stretch+tutorial"
+    },
+    {
+      "id": "ex-hip-cars",
+      "title": "Hip CARs (Controlled Articular Rotations)",
+      "target": "Hip joint, active mobility",
+      "dose": "3 ea direction / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Quadruped (all fours). Core engaged, rest of body stationary throughout."
+        },
+        {
+          "label": "Execution",
+          "content": "Lift one knee out to the side, then rotate the hip through the largest circle you can make \u2014 abduct (out to side), externally rotate (foot sweeps down), extend (knee goes behind you), then return to start. Reverse direction. 3 reps each way, each leg."
+        },
+        {
+          "label": "Cues",
+          "content": "Slow and controlled \u2014 quality over size of circle. The rest of your body should not move: no spinal twisting, no pelvic tilting to cheat more range. Stay in your pain-free range."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=hip+CARs+controlled+articular+rotations+tutorial"
+    },
+    {
+      "id": "ex-jefferson",
+      "title": "Jefferson curl",
+      "target": "Posterior chain, spinal flexion",
+      "dose": "3 \u00d7 6, light load",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Stand on a bench or platform, feet hip-width. Hold a light weight \u2014 empty barbell or a 10\u201320 lb dumbbell/kettlebell. Start very light."
+        },
+        {
+          "label": "Execution",
+          "content": "Starting at the top, slowly roll down <em>one vertebra at a time</em> \u2014 tuck chin first, then flex through the upper back, middle back, lower back. Let the weight pull you down as far as you can control. Pause briefly. Reverse: roll up from the hips, stacking one vertebra at a time until neck is last."
+        },
+        {
+          "label": "Cues",
+          "content": "This is <em>not</em> a deadlift or stiff-leg deadlift. It's a deliberate, controlled spinal flexion under light load. Knees can be soft. Tempo is slow \u2014 3\u20134s down, pause, 3\u20134s up."
+        },
+        {
+          "label": "Safety",
+          "content": "Skip this if you have active disc problems, sciatica, or recent back injury. Progress load very gradually \u2014 this is a decades-long exercise, not a weekly PR attempt. When in doubt, stay lighter."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=jefferson+curl+tutorial+mobility"
+    },
+    {
+      "id": "ex-kneeling-shin",
+      "title": "Kneeling shin stretch",
+      "target": "Anterior capsule, tibialis anterior, toe extensors, plantarflexion ROM",
+      "dose": "60\u201390s",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Kneel with both shins and the tops of your feet flat on the floor \u2014 full plantarflexion (pointed feet), <em>not</em> tucked toes. Padded surface under the knees."
+        },
+        {
+          "label": "Execution",
+          "content": "Sit back onto your heels. Press the tops of the feet down into the floor. If too intense, place hands behind you on the floor and lift hips slightly off heels to reduce. To increase, lean back further and/or lift knees off the floor (advanced)."
+        },
+        {
+          "label": "Cues",
+          "content": "This is one of the highest-value exercises for your specific pattern. The goal is to lengthen the front of the ankle and accustom the tissues to the pointed position. Breathe into it \u2014 don't brace against the sensation."
+        },
+        {
+          "label": "Progression",
+          "content": "Week 1\u20132: 30\u201345s, hands supporting. Week 3+: 60\u201390s, full weight on heels. Week 6+: lift knees off floor briefly for an intensified version."
+        },
+        {
+          "label": "Warning",
+          "content": "Back off if you feel pain in the ankle joint itself (sharp, pinching), as opposed to the muscle/connective tissue stretch (spreading, warm). This can be intense at first."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=kneeling+shin+stretch+ankle+plantar+flexion"
+    },
+    {
+      "id": "ex-tib-ant",
+      "title": "Seated tibialis anterior stretch",
+      "target": "Tibialis anterior, toe extensors, anterior ankle",
+      "dose": "60s / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Sit on the floor or on a chair. Cross one ankle over the opposite knee so the foot is free in space, sole facing you."
+        },
+        {
+          "label": "Execution",
+          "content": "With one hand on the heel and the other on the top of the foot, actively point the foot (plantarflex) as hard as you can, then use the hand on the top of the foot to gently assist further \u2014 pressing the top of the foot toward the forearm to deepen the stretch. You should feel it along the shin and anterior ankle."
+        },
+        {
+          "label": "Cues",
+          "content": "Combine active contraction (calf firing) with passive overpressure (hand pushing). This trains the muscle to work in the shortened position while lengthening what's in front."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=seated+tibialis+anterior+stretch+tutorial"
+    },
+    {
+      "id": "ex-active-points",
+      "title": "Hard active toe points",
+      "target": "Neural end-range plantarflexion",
+      "dose": "5 \u00d7 8s holds",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Seated or supine with one leg extended, foot free in space."
+        },
+        {
+          "label": "Execution",
+          "content": "Point your foot as hard as possible \u2014 drive the toes down and away, squeeze the calf, crunch the top of the foot. Hold the maximal contraction for 8 seconds. Relax fully. Repeat 5 times per foot."
+        },
+        {
+          "label": "Cues",
+          "content": "Think \"cramp without cramping.\" The intensity should be near-maximal. This isn't a stretch \u2014 it's a <em>neural drive</em> exercise. Your brain has to learn that end-range plantarflexion is available and safe to use."
+        },
+        {
+          "label": "Common mistake",
+          "content": "Going easy because it feels awkward or the foot starts to cramp. A little cramping is expected and fine \u2014 shake it out, go again."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=active+plantarflexion+end+range+training"
+    },
+    {
+      "id": "ex-calf-raise",
+      "title": "Weighted calf raise with end-range pause",
+      "target": "Gastrocnemius, soleus, loaded plantarflexion",
+      "dose": "3 \u00d7 8, 2s top hold",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Stand holding dumbbells at your sides, or use a barbell on your back. Feet hip-width apart on flat ground (no deficit \u2014 you have enough dorsiflexion already). Start with a moderate weight; you should have 3+ reps in reserve."
+        },
+        {
+          "label": "Execution",
+          "content": "Drive up onto the balls of the feet as high as possible \u2014 peak plantarflexion. Hold for 2 full seconds at the top. Slowly lower (3s eccentric) back to neutral flat-foot. Don't bounce or drop \u2014 the eccentric is where strength gets built."
+        },
+        {
+          "label": "Cues",
+          "content": "Top hold is the point of the exercise. It teaches the calf to hold peak contraction and reinforces end-range plantarflexion. Don't sacrifice range for weight \u2014 height of rise matters more than pounds on the bar in early weeks."
+        },
+        {
+          "label": "Why flat, not on a step",
+          "content": "Calf raises on a step lower the heel below the platform \u2014 that's additional dorsiflexion under load, which for your pattern adds range you don't need. Flat ground delivers the strengthening benefit without the dorsiflexion emphasis."
+        },
+        {
+          "label": "Progression",
+          "content": "Weeks 1\u20132: bodyweight or light dumbbells, focus on height + top hold. Weeks 3\u20136: progressively add weight. Week 6+: graduate to single-leg eccentric version (below) for the main sets."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=weighted+calf+raise+top+hold+tutorial"
+    },
+    {
+      "id": "ex-calf-raise-sl",
+      "title": "Calf raises \u2014 single-leg eccentric",
+      "target": "Gastroc/soleus strength, eccentric control",
+      "dose": "3 \u00d7 6 / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Stand next to a wall or rack for balance. Hold a dumbbell in one hand if adding load. Stand on flat ground, one foot off (or just lifted behind you)."
+        },
+        {
+          "label": "Execution",
+          "content": "Push up onto the ball of the standing foot using <em>both</em> feet (tap the lifted foot down briefly to assist). Once at the top, lift the assisting foot and lower slowly on just the working leg \u2014 4\u20135 seconds to the bottom. Tap down, drive up with both, lower with one. Repeat."
+        },
+        {
+          "label": "Cues",
+          "content": "The eccentric (lowering) phase is the whole point \u2014 that's where the strength gap between your two legs or between you and \"normal\" gets closed. Don't rush it."
+        },
+        {
+          "label": "Progression",
+          "content": "Once you can do 3 \u00d7 6 unloaded with 5s eccentric per rep, start adding weight."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=single+leg+eccentric+calf+raise+tutorial"
+    },
+    {
+      "id": "ex-talar-glide",
+      "title": "Banded posterior talar glide with active pointing",
+      "target": "Posterior talar glide, anterior capsule",
+      "dose": "10 / side (optional, 2\u20133\u00d7/wk)",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Anchor a heavy resistance band low on a rack, door anchor, or sturdy post \u2014 at floor level or just above. Loop the band around the front of your ankle, <em>just above</em> where the foot meets the shin (so the band pulls on the front of the lower tibia). Sit on the floor facing away from the anchor, band-leg extended, so the band pulls the ankle <em>toward</em> the anchor (which is behind you)."
+        },
+        {
+          "label": "Execution",
+          "content": "With the band loaded, actively point the foot as far as you can, then relax. Repeat 10 times. The band creates a posterior-directed pull on the distal tibia relative to the talus \u2014 effectively gliding the talus rearward while you actively reinforce the plantarflexion pattern."
+        },
+        {
+          "label": "Cues",
+          "content": "Band tension should be firm but not so strong it causes the ankle to hurt. The point is joint mobilization, not compression. If in doubt, go lighter on band tension."
+        },
+        {
+          "label": "Note",
+          "content": "This is the most technique-dependent exercise in the plan. If it doesn't feel right after a few tries, skip it \u2014 the rest of the plan will still work. A PT visit to dial in the technique once is worth the money if you want to use this long-term."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=banded+posterior+talar+glide+plantarflexion+mobilization"
+    },
+    {
+      "id": "ex-pigeon",
+      "title": "Pigeon pose",
+      "target": "Glutes, piriformis, outer hip",
+      "dose": "90s / side \u00d7 2",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "From quadruped, bring one knee forward and place the shin at a diagonal under your torso. If flexibility permits, the front shin approaches perpendicular to the body; if not, keep it at a shallower angle. Extend the back leg straight behind you, hip pointing down."
+        },
+        {
+          "label": "Execution",
+          "content": "Square both hips forward as much as possible. Walk hands out in front and lower chest toward the front leg, either resting on forearms or lying flat."
+        },
+        {
+          "label": "Cues",
+          "content": "If the front hip is lifting off the floor, place a folded blanket or cushion under it to level off \u2014 chasing a perpendicular shin with an elevated hip kills the stretch. Start shallow and work deeper over weeks."
+        },
+        {
+          "label": "Common mistake",
+          "content": "Forcing the front shin to 90\u00b0 on day one. Pigeon meets you where you are."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=pigeon+pose+tutorial+hip+stretch"
+    },
+    {
+      "id": "ex-side-quad",
+      "title": "Side-lying quad stretch",
+      "target": "Quads, hip flexors",
+      "dose": "90s / side",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Lie on your left side, legs stacked, head resting on left arm."
+        },
+        {
+          "label": "Execution",
+          "content": "Bend the right knee back, grab the right ankle with your right hand, and pull the heel toward your glute. For more stretch, squeeze the right glute and drive the right knee slightly <em>back</em> (hip extension) while keeping hold of the ankle."
+        },
+        {
+          "label": "Cues",
+          "content": "Engage your core \u2014 don't let the lower back arch. Hips stay stacked vertically; don't let the top hip roll forward or backward."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=side+lying+quad+stretch+tutorial"
+    },
+    {
+      "id": "ex-thread",
+      "title": "Thread the needle",
+      "target": "T-spine rotation, rhomboids, rotator cuff",
+      "dose": "8 / side slow (or 30s hold)",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Quadruped."
+        },
+        {
+          "label": "Execution",
+          "content": "Reach your right arm under your body, threading it toward the left side. Let your right shoulder and the right side of your head come to rest on the floor. Left arm can stay planted, or extend overhead for a deeper lat stretch."
+        },
+        {
+          "label": "Cues",
+          "content": "Keep hips stacked over your knees \u2014 don't let them shift. The rotation should come from the thoracic spine, not the hips or lumbar."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=thread+the+needle+stretch+tutorial"
+    },
+    {
+      "id": "ex-tspine",
+      "title": "T-spine extension over foam roller",
+      "target": "Thoracic spine extension",
+      "dose": "2 min",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Lie on your back with a foam roller placed horizontally across your upper back \u2014 roughly between the shoulder blades. Knees bent, feet flat on the floor."
+        },
+        {
+          "label": "Execution",
+          "content": "Support your head with both hands, elbows pointing up toward the ceiling. Gently lower the head and shoulders back, letting the upper back arch over the roller. Lift back up. Move the roller progressively up and down your thoracic spine \u2014 but <em>never</em> below the bottom of the ribcage."
+        },
+        {
+          "label": "Cues",
+          "content": "Small movements. This is a gentle, accumulated stretch \u2014 not a hyperextension. Supporting the head prevents neck strain."
+        },
+        {
+          "label": "Warning",
+          "content": "Never let the foam roller sit on your lumbar spine. Keep it above the bottom of the ribs."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=thoracic+spine+extension+foam+roller+tutorial"
+    },
+    {
+      "id": "ex-9090",
+      "title": "90/90 stretch",
+      "target": "Hip external + internal rotators",
+      "dose": "90s / side \u00d7 2",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Sit on the floor. Front leg bent 90\u00b0 in front of you \u2014 the shin runs roughly parallel to your pelvis. Back leg bent 90\u00b0 to the side \u2014 shin perpendicular to the front shin. Both knees are bent at 90\u00b0, hence the name."
+        },
+        {
+          "label": "Execution",
+          "content": "Sit tall first. Then hinge forward over the front shin \u2014 this stretches the front hip's external rotators (glute/piriformis area). Return upright. Lean back and toward the back leg \u2014 this stretches the back hip's internal rotators."
+        },
+        {
+          "label": "Cues",
+          "content": "Both sit-bones should stay on the floor ideally. If the front-leg-side sit-bone lifts, place a cushion or folded blanket under it to level your pelvis. Keep the 90\u00b0 angles \u2014 don't let the front shin drift closer to your body to \"cheat\" the stretch."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=90+90+hip+stretch+tutorial"
+    },
+    {
+      "id": "ex-9090-trans",
+      "title": "90/90 transitions",
+      "target": "Active hip rotation control",
+      "dose": "10 slow reps",
+      "sections": [
+        {
+          "label": "Setup",
+          "content": "Start seated in the 90/90 position (see above)."
+        },
+        {
+          "label": "Execution",
+          "content": "Sweep both legs up and over to the opposite side, rotating through the hips, and land in a mirrored 90/90 on the other side. Continue alternating."
+        },
+        {
+          "label": "Cues",
+          "content": "Hands support on the floor behind or beside you as needed. Move slowly with control. This builds <em>active</em> range \u2014 the ability to use the range, not just hold it passively."
+        }
+      ],
+      "youtube": "https://www.youtube.com/results?search_query=90+90+hip+transitions+mobility"
+    }
+  ],
+  "progressionRules": [
+    {
+      "num": "01",
+      "title": "Weeks 1\u20132 \u00b7 Prove consistency",
+      "text": "Cut all hold times in half. Don't chase depth. The single goal is to show up every evening and tolerate the movements without soreness bleeding into your morning lifts."
+    },
+    {
+      "num": "02",
+      "title": "Weeks 3\u20136 \u00b7 Full protocol",
+      "text": "Full hold times. Work into \"working stretch\" intensity \u2014 a clear sensation in the target tissue that's uncomfortable but not sharp, not in a joint. Never push into pain."
+    },
+    {
+      "num": "03",
+      "title": "Week 6+ \u00b7 Add load and active work",
+      "text": "Heavier Jefferson curls. Deeper Cossacks. Introduce PNF/contract-relax on hamstrings and adductors: stretch to end range, contract the stretched muscle against resistance for 5\u201310s, relax, move deeper. This is where real, durable range gains happen."
+    },
+    {
+      "num": "04",
+      "title": "On plateaus",
+      "text": "If a benchmark stalls for 3+ weeks, <em>add load</em> rather than duration. Holding passive stretches longer has diminishing returns; loaded stretching (Jefferson curl, Cossack with weight, deficit deadlifts) tends to unlock stuck ranges."
+    },
+    {
+      "num": "05",
+      "title": "Timing relative to bed",
+      "text": "Do the session 30\u201390 minutes before bed. Immediately before can be too activating (or, paradoxically, make falling asleep harder). The parasympathetic shift from mobility work is real \u2014 give it a small window to land."
+    }
+  ],
+  "benchmarks": [
+    {
+      "metric": "Plantarflexion angle (\u00b0)",
+      "desc": "Seated, leg extended, actively point foot maximally. Measure angle between shin and sole with a goniometer or phone protractor app. Normal is 50\u00b0+; this is the key ROM you're chasing."
+    },
+    {
+      "metric": "Active point quality",
+      "desc": "Can you hold a maximal active toe point for 10s without cramping or losing shape? Start with whatever you can do and extend."
+    },
+    {
+      "metric": "Deep squat hold (min)",
+      "desc": "Longest continuous hold at the bottom of a bodyweight squat, heels flat, without support."
+    },
+    {
+      "metric": "Sit-and-reach (cm)",
+      "desc": "Classic test. Seated, legs straight, reach forward. Measure distance past (or short of) your toes."
+    },
+    {
+      "metric": "90/90 forward fold",
+      "desc": "Chest-to-shin distance in the 90/90 forward lean. Note any sit-bone lift."
+    },
+    {
+      "metric": "Couch stretch depth",
+      "desc": "Can you hold posterior pelvic tilt for 90s with torso upright? Both sides."
+    },
+    {
+      "metric": "Cossack depth",
+      "desc": "Can you reach parallel (hip crease below knee) on each side with heel down?"
+    }
+  ],
+  "ankleNote": {
+    "title": "Built around a specific ankle ROM pattern",
+    "paragraphs": [
+      "Total ankle range is roughly normal, but distributed asymmetrically: abundant dorsiflexion, limited plantarflexion. Likely mechanism \u2014 anteriorly-shifted talus, lengthened anterior capsule, shortened posterior capsule, underused calves. The window of motion has slid forward. The goal is to redistribute it rearward.",
+      "Consequences for this plan:"
+    ],
+    "items": [
+      "<strong>No calf stretching or dorsiflexion-biased ankle work.</strong> Standard tools \u2014 knee-to-wall, downward dog calf stretch, runner's stretch \u2014 are excluded. They deepen range that's already there.",
+      "<strong>Anterior ankle lengthening.</strong> Kneeling on tops of feet and seated shin stretches open the front of the ankle (tibialis anterior, toe extensors, anterior capsule).",
+      "<strong>Loaded plantarflexion through full range.</strong> Weighted calf raises with end-range pauses build calf strength and help seat the talus further back. Post-leg days only (Mon, Thu) to protect squat sessions.",
+      "<strong>Active plantarflexion drills.</strong> Hard toe points and ankle CARs train neural drive into the end range that's currently under-reached.",
+      "<strong>Optional: banded posterior talar glide.</strong> Joint mobilization that pulls the talus rearward during active pointing.",
+      "<strong>Kept despite dorsiflexion load:</strong> deep squat hold and Cossack squat. These serve hip/adductor goals \u2014 the ankle position is incidental, not a stretching target."
+    ]
+  }
+}
