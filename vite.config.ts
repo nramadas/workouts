@@ -7,8 +7,8 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'prompt',
-      includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
+      registerType: 'autoUpdate',
+      includeAssets: ['icons/apple-touch-icon.png'],
       manifest: {
         name: 'Workouts',
         short_name: 'Workouts',
@@ -16,6 +16,7 @@ export default defineConfig({
         theme_color: '#0a0a0a',
         background_color: '#0a0a0a',
         display: 'standalone',
+        display_override: ['standalone', 'minimal-ui', 'browser'],
         orientation: 'portrait',
         scope: '/workouts/',
         start_url: '/workouts/',
@@ -28,6 +29,9 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        navigateFallback: '/workouts/index.html',
+        navigateFallbackDenylist: [/^\/workouts\/(assets|icons|sw\.js|workbox|manifest)/],
+        cleanupOutdatedCaches: true,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.(gstatic|googleapis)\.com\/.*/i,
