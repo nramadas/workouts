@@ -6,6 +6,7 @@ import { getDay } from '../lib/seed';
 import type { DayId, ExerciseLog, SetLog, WorkoutLog } from '../lib/types';
 import { Card } from '../components/Card';
 import { RestTimer } from '../components/RestTimer';
+import { TAB_BAR_HEIGHT_PX } from '../components/Nav';
 
 const SECTION_TITLES: Record<string, string> = {
   warmup: 'Warmup',
@@ -156,7 +157,12 @@ export default function WorkoutLog() {
         </section>
       ))}
 
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-white/5 bg-ink-950/90 px-4 py-3 backdrop-blur">
+      <div
+        className="fixed inset-x-0 z-30 border-t border-white/5 bg-ink-950/90 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))] py-3 backdrop-blur"
+        style={{
+          bottom: `calc(${TAB_BAR_HEIGHT_PX}px + env(safe-area-inset-bottom, 0px))`,
+        }}
+      >
         <div className="mx-auto flex max-w-3xl items-center gap-3">
           <button
             type="button"

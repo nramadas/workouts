@@ -75,11 +75,16 @@ export default function Progress() {
       </header>
 
       <Card ambient crosshair>
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <label className="flex flex-col">
+        <label className="flex flex-col gap-1.5">
+          <div className="flex items-baseline justify-between gap-2">
             <span className="mono-eyebrow">Exercise</span>
+            <span className="font-mono text-[11px] text-muted-light">
+              {series.length} session{series.length === 1 ? '' : 's'}
+            </span>
+          </div>
+          <div className="relative">
             <select
-              className="mt-1 rounded-full border border-white/10 bg-ink-900 px-3 py-1.5 text-sm focus:outline-none"
+              className="w-full appearance-none rounded-full border border-white/10 bg-ink-900 py-2 pl-3 pr-9 text-sm focus:outline-none"
               value={selected}
               onChange={(e) => setSelected(e.target.value)}
             >
@@ -96,12 +101,22 @@ export default function Progress() {
                 </optgroup>
               ))}
             </select>
-          </label>
-          <div className="text-right">
-            <div className="mono-eyebrow">Sessions</div>
-            <div className="stat-num text-2xl">{series.length}</div>
+            <svg
+              aria-hidden
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-muted"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
           </div>
-        </div>
+        </label>
 
         <div className="mt-5 h-56">
           {series.length === 0 ? (

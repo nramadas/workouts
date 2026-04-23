@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Nav } from './Nav';
+import { Nav, TAB_BAR_HEIGHT_PX } from './Nav';
 
 export function Layout() {
   const [updateReady, setUpdateReady] = useState(false);
@@ -11,11 +11,16 @@ export function Layout() {
   }, []);
 
   return (
-    <div className="min-h-screen pb-20">
-      <div className="mx-auto max-w-3xl px-4">
-        <Nav />
+    <div className="min-h-screen">
+      <div
+        className="mx-auto max-w-3xl pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))]"
+        style={{
+          paddingTop: 'max(0.75rem, env(safe-area-inset-top))',
+          paddingBottom: `calc(${TAB_BAR_HEIGHT_PX}px + env(safe-area-inset-bottom, 0px) + 1rem)`,
+        }}
+      >
         {updateReady && (
-          <div className="mt-4 flex items-center justify-between gap-3 rounded-card border border-coral/30 bg-coral/10 px-4 py-3 text-sm">
+          <div className="mb-4 flex items-center justify-between gap-3 rounded-card border border-coral/30 bg-coral/10 px-4 py-3 text-sm">
             <span className="text-white/90">A new version is available.</span>
             <button
               type="button"
@@ -26,10 +31,11 @@ export function Layout() {
             </button>
           </div>
         )}
-        <main className="mt-6">
+        <main>
           <Outlet />
         </main>
       </div>
+      <Nav />
     </div>
   );
 }

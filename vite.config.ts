@@ -8,8 +8,11 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      selfDestroying: true,
+      manifestFilename: 'manifest.json',
       includeAssets: ['icons/apple-touch-icon.png'],
       manifest: {
+        id: '/workouts/',
         name: 'Workouts',
         short_name: 'Workouts',
         description: 'Personal training log.',
@@ -19,12 +22,12 @@ export default defineConfig({
         display_override: ['standalone', 'minimal-ui', 'browser'],
         orientation: 'portrait',
         scope: '/workouts/',
-        start_url: '/workouts/',
+        start_url: '/workouts/index.html',
         icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
-          { src: 'icons/icon-192-maskable.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
-          { src: 'icons/icon-512-maskable.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+          { src: '/workouts/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/workouts/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: '/workouts/icons/icon-192-maskable.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
+          { src: '/workouts/icons/icon-512-maskable.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
       workbox: {

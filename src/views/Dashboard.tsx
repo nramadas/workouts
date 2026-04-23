@@ -104,17 +104,17 @@ export default function Dashboard() {
         )}
       </Card>
 
-      <div className="grid grid-cols-3 gap-3 sm:gap-5">
-        <Card className="!p-4 sm:!p-5">
+      <div className="grid grid-cols-3 gap-2 sm:gap-5">
+        <Card className="min-w-0 overflow-hidden !p-3 sm:!p-5">
           <Stat value={totalWorkouts} label="Workouts" />
         </Card>
-        <Card className="!p-4 sm:!p-5">
-          <Stat value={totalSets} label="Sets logged" />
+        <Card className="min-w-0 overflow-hidden !p-3 sm:!p-5">
+          <Stat value={totalSets} label="Sets" />
         </Card>
-        <Card className="!p-4 sm:!p-5">
+        <Card className="min-w-0 overflow-hidden !p-3 sm:!p-5">
           <Stat
             value={heaviest ? `${heaviest.weight}` : '—'}
-            label="Heaviest lb"
+            label="Top lb"
             sub={heaviest?.name}
           />
         </Card>

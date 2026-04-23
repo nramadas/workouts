@@ -28,25 +28,6 @@ export default function Mobility() {
         </p>
       </header>
 
-      <Card crosshair className="border-emerald-400/20">
-        <div className="mono-eyebrow text-emerald-300">Ankle protocol note</div>
-        <h3 className="display-serif mt-2 text-xl">{mobility.ankleNote.title}</h3>
-        {mobility.ankleNote.paragraphs.map((p, i) => (
-          <p key={i} className="mt-2 text-sm text-muted-light">
-            {p}
-          </p>
-        ))}
-        <ul className="mt-3 space-y-2">
-          {mobility.ankleNote.items.map((it, i) => (
-            <li
-              key={i}
-              className="border-l-2 border-emerald-400/60 pl-3 text-sm text-muted-light"
-              dangerouslySetInnerHTML={{ __html: inlineTags(it) }}
-            />
-          ))}
-        </ul>
-      </Card>
-
       {todaySession && (
         <Card ambient crosshair className="border-coral/30">
           <div className="mono-eyebrow text-coral">Tonight · {todayName}</div>
@@ -59,23 +40,25 @@ export default function Mobility() {
         <h2 className="display-serif mb-3 text-2xl">
           The <em>weekly</em> rhythm
         </h2>
-        <div className="grid grid-cols-7 gap-1.5 text-center">
+        <div className="grid grid-cols-7 gap-1 text-center sm:gap-1.5">
           {mobility.weeklyGrid.map((cell) => (
             <div
               key={cell.abbr}
-              className={`rounded-lg border p-2 ${
+              className={`min-w-0 overflow-hidden rounded-lg border px-1 py-1.5 sm:p-2 ${
                 cell.day === todayName
                   ? 'border-coral bg-coral/5'
                   : 'border-white/5 bg-ink-800'
               }`}
             >
-              <div className="font-mono text-[10px] uppercase tracking-[0.15em] text-muted">
+              <div className="font-mono text-[9px] uppercase tracking-[0.05em] text-muted sm:text-[10px] sm:tracking-[0.1em]">
                 {cell.abbr}
               </div>
               <div
-                className={`mx-auto my-2 h-1 w-3/5 rounded ${INTENSITY_STYLE[cell.intensity]}`}
+                className={`mx-auto my-1.5 h-1 w-3/5 rounded sm:my-2 ${INTENSITY_STYLE[cell.intensity]}`}
               />
-              <div className="text-[11px] leading-tight text-muted-light">{cell.focus}</div>
+              <div className="break-words text-[9px] leading-tight text-muted-light sm:text-[11px]">
+                {cell.focus}
+              </div>
             </div>
           ))}
         </div>
@@ -157,6 +140,25 @@ export default function Mobility() {
         </div>
       </section>
 
+      <Card crosshair className="border-emerald-400/20">
+        <div className="mono-eyebrow text-emerald-300">Ankle protocol note</div>
+        <h3 className="display-serif mt-2 text-xl">{mobility.ankleNote.title}</h3>
+        {mobility.ankleNote.paragraphs.map((p, i) => (
+          <p key={i} className="mt-2 text-sm text-muted-light">
+            {p}
+          </p>
+        ))}
+        <ul className="mt-3 space-y-2">
+          {mobility.ankleNote.items.map((it, i) => (
+            <li
+              key={i}
+              className="border-l-2 border-emerald-400/60 pl-3 text-sm text-muted-light"
+              dangerouslySetInnerHTML={{ __html: inlineTags(it) }}
+            />
+          ))}
+        </ul>
+      </Card>
+
       <footer className="mt-6 text-center font-mono text-[11px] text-muted">
         v1 · built for evenings · adjust as your body feeds back
       </footer>
@@ -180,17 +182,17 @@ function SessionItem({
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-baseline gap-3 p-4 text-left"
+        className="grid w-full grid-cols-[auto_1fr_auto] items-start gap-x-3 gap-y-1 p-4 text-left"
         aria-expanded={open}
       >
-        <span className="font-mono text-xs uppercase tracking-[0.15em] text-muted">
+        <span className="mt-[3px] font-mono text-xs uppercase tracking-[0.15em] text-muted">
           {session.day.slice(0, 3)}
         </span>
-        <span className="flex-1 font-medium">{session.title}</span>
-        <span className="font-mono text-[11px] uppercase tracking-wider text-muted">
+        <span className="min-w-0 break-words font-medium">{session.title}</span>
+        <span className="mt-[3px] text-muted">{open ? '▾' : '▸'}</span>
+        <span className="col-start-2 font-mono text-[11px] uppercase tracking-wider text-muted">
           {session.meta}
         </span>
-        <span className="text-muted">{open ? '▾' : '▸'}</span>
       </button>
       {open && (
         <div className="border-t border-white/5 p-4">
@@ -199,9 +201,9 @@ function SessionItem({
             {session.exercises.map((ex, i) => (
               <li
                 key={i}
-                className="flex items-baseline justify-between gap-3 py-2 text-sm"
+                className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5 py-2 text-sm"
               >
-                <span>
+                <span className="min-w-0 break-words">
                   {ex.ref ? (
                     <a
                       href={`#${ex.ref}`}
@@ -243,14 +245,14 @@ function LibraryItem({ item }: { item: (typeof mobility)['library'][number] }) {
         type="button"
         data-lib={item.id}
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-baseline gap-3 p-4 text-left"
+        className="grid w-full grid-cols-[1fr_auto] items-start gap-x-3 gap-y-1 p-4 text-left"
         aria-expanded={open}
       >
-        <span className="flex-1 font-medium">{item.title}</span>
+        <span className="min-w-0 break-words font-medium">{item.title}</span>
+        <span className="mt-[3px] text-muted">{open ? '▾' : '▸'}</span>
         {item.dose && (
-          <span className="font-mono text-[11px] text-muted">{item.dose}</span>
+          <span className="col-start-1 font-mono text-[11px] text-muted">{item.dose}</span>
         )}
-        <span className="text-muted">{open ? '▾' : '▸'}</span>
       </button>
       {open && (
         <div className="border-t border-white/5 p-4 text-sm text-muted-light">
