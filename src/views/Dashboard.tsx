@@ -70,10 +70,8 @@ export default function Dashboard() {
       <Card ambient crosshair>
         <div className="mono-eyebrow">Today</div>
         <h1 className="display-serif mt-2 text-4xl sm:text-5xl">
-          Hey — <em>{day ? day.display : dayName}</em>{' '}
-          <span className="text-white/60">
-            {day ? 'today' : 'rest day'}
-          </span>
+          <span className="text-coral">{day ? day.display : dayName}</span>
+          {!day && <span className="text-white/60"> · rest</span>}
         </h1>
         <p className="mt-3 max-w-xl text-sm text-muted-light">
           {day

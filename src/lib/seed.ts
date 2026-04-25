@@ -42,6 +42,39 @@ function inferMuscleGroups(name: string): string[] {
   return [...hits];
 }
 
+// Bodyweight movements: weight input is meaningless.
+const HIDE_WEIGHT_PATTERNS: RegExp[] = [
+  /band pull[- ]?aparts?/i,
+  /push[- ]?ups?/i,
+  /pull[- ]?ups? \(or weighted/i, // pull-ups default to bodyweight
+  /\bpull[- ]?up ramp/i,
+  /bodyweight/i,
+  /dead hang/i,
+  /hanging leg raise/i,
+  /\bplank\b/i,
+  /pallof press/i,
+  /ab wheel rollout/i,
+  /cable woodchop/i, // user can still log weight on cable, but feels like an ab move; keep weight visible actually
+  /cat[- ]?cow/i,
+];
+
+// Time-based / carry movements: rep count isn't the right unit.
+const HIDE_REPS_PATTERNS: RegExp[] = [
+  /farmer'?s walk/i,
+  /\bdead hang/i,
+  /outdoor walk/i,
+];
+
+// Weight makes sense for cable woodchops, so override:
+const FORCE_SHOW_WEIGHT: RegExp[] = [/cable woodchop/i];
+
+function inferFieldVisibility(name: string): { hideWeight: boolean; hideReps: boolean } {
+  const forceWeight = FORCE_SHOW_WEIGHT.some((r) => r.test(name));
+  const hideWeight = !forceWeight && HIDE_WEIGHT_PATTERNS.some((r) => r.test(name));
+  const hideReps = HIDE_REPS_PATTERNS.some((r) => r.test(name));
+  return { hideWeight, hideReps };
+}
+
 function hydrateDay(d: RawWorkouts['days'][number]): DayDef {
   return {
     id: d.id,
@@ -50,6 +83,7 @@ function hydrateDay(d: RawWorkouts['days'][number]): DayDef {
     exercises: d.exercises.map((e) => ({
       ...e,
       muscleGroups: inferMuscleGroups(e.name),
+      ...inferFieldVisibility(e.name),
     })),
   };
 }

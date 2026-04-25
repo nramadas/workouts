@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type FocusEvent } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db, latestCompletedForExercise, nextSessionIndex } from '../db/dexie';
@@ -213,10 +213,17 @@ function ExerciseCard({ exercise, state, onChange, onStartRest }: ExerciseCardPr
     onChange({ ...s, sets: [...s.sets, newSet(last)] });
   }
 
-  function removeSet(i: number) {
-    const sets = s.sets.slice();
-    sets.splice(i, 1);
-    onChange({ ...s, sets: sets.length ? sets : [newSet()] });
+  function focusToEnd(e: FocusEvent<HTMLInputElement>) {
+    const t = e.currentTarget;
+    if (t.value && t.type === 'number') {
+      // setSelectionRange isn't supported on number inputs in WebKit. Re-set
+      // the value to nudge the caret to the end.
+      const v = t.value;
+      requestAnimationFrame(() => {
+        t.value = '';
+        t.value = v;
+      });
+    }
   }
 
   return (
@@ -244,15 +251,13 @@ function ExerciseCard({ exercise, state, onChange, onStartRest }: ExerciseCardPr
         <p className="mt-1.5 text-xs text-muted-light">{ex.notes}</p>
       )}
 
-      {prev?.weight != null && (
+      {prev && (prev.weight != null || prev.reps) && (
         <div className="mt-3 inline-flex items-baseline gap-2 rounded-full border border-coral/30 bg-coral/5 px-3 py-1 font-mono text-[11px]">
           <span className="text-coral">Last time</span>
-          <span className="text-white">
-            {prev.weight} lb × {prev.reps}
-          </span>
+          <span className="text-white">{formatPrev(prev, ex)}</span>
         </div>
       )}
-      {!prev && ex.startingWeight != null && (
+      {!prev && ex.startingWeight != null && !ex.hideWeight && (
         <div className="mt-3 inline-flex items-baseline gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-[11px]">
           <span className="text-muted">Start</span>
           <span className="text-white">{ex.startingWeight} lb</span>
@@ -264,47 +269,61 @@ function ExerciseCard({ exercise, state, onChange, onStartRest }: ExerciseCardPr
           {s.sets.map((set, i) => (
             <div
               key={set.tempId}
-              className="flex items-center gap-2 rounded-lg border border-white/5 bg-ink-900 px-2 py-1.5"
+              className="flex items-stretch gap-2 rounded-lg border border-white/5 bg-ink-900 pl-2 pr-2.5"
             >
-              <span className="w-6 text-center font-mono text-[11px] text-muted">
+              <span className="flex w-5 items-center justify-center font-mono text-[11px] text-muted">
                 {i + 1}
               </span>
-              <label className="flex flex-1 items-center gap-2">
-                <input
-                  type="number"
-                  inputMode="decimal"
-                  step="0.5"
-                  placeholder="lb"
-                  value={set.weight ?? ''}
-                  onChange={(e) =>
-                    updateSet(i, {
-                      weight:
-                        e.target.value === '' ? undefined : Number(e.target.value),
-                    })
-                  }
-                  className="w-20 bg-transparent text-right font-mono text-sm focus:outline-none"
-                />
-                <span className="text-muted">×</span>
-                <input
-                  type="number"
-                  inputMode="numeric"
-                  step="1"
-                  placeholder="reps"
-                  value={set.reps || ''}
-                  onChange={(e) =>
-                    updateSet(i, { reps: Number(e.target.value) || 0 })
-                  }
-                  className="w-16 bg-transparent text-right font-mono text-sm focus:outline-none"
-                />
-              </label>
-              <button
-                type="button"
-                onClick={() => removeSet(i)}
-                className="px-2 text-xs text-muted hover:text-white"
-                aria-label="Remove set"
-              >
-                ×
-              </button>
+              {!ex.hideWeight && (
+                <label
+                  className={`flex min-w-0 cursor-text items-center gap-1.5 py-2 ${
+                    ex.hideReps ? 'flex-1' : 'flex-1 basis-0'
+                  }`}
+                >
+                  <input
+                    type="number"
+                    inputMode="decimal"
+                    step="0.5"
+                    placeholder="—"
+                    value={set.weight ?? ''}
+                    onFocus={focusToEnd}
+                    onChange={(e) =>
+                      updateSet(i, {
+                        weight:
+                          e.target.value === '' ? undefined : Number(e.target.value),
+                      })
+                    }
+                    className="w-full min-w-0 bg-transparent text-right font-mono text-base focus:outline-none"
+                  />
+                  <span className="font-mono text-[11px] text-muted">lb</span>
+                </label>
+              )}
+              {!ex.hideWeight && !ex.hideReps && (
+                <span aria-hidden className="flex items-center text-muted">
+                  ·
+                </span>
+              )}
+              {!ex.hideReps && (
+                <label
+                  className={`flex min-w-0 cursor-text items-center gap-1.5 py-2 ${
+                    ex.hideWeight ? 'flex-1' : 'flex-1 basis-0'
+                  }`}
+                >
+                  <input
+                    type="number"
+                    inputMode="numeric"
+                    step="1"
+                    placeholder="—"
+                    value={set.reps || ''}
+                    onFocus={focusToEnd}
+                    onChange={(e) =>
+                      updateSet(i, { reps: Number(e.target.value) || 0 })
+                    }
+                    className="w-full min-w-0 bg-transparent text-right font-mono text-base focus:outline-none"
+                  />
+                  <span className="font-mono text-[11px] text-muted">reps</span>
+                </label>
+              )}
             </div>
           ))}
           <div className="flex items-center justify-between gap-2">
@@ -337,4 +356,14 @@ function parseRest(rest?: string): number {
   const unit = m[3].toLowerCase();
   const mult = unit.startsWith('m') ? 60 : 1;
   return low * mult;
+}
+
+function formatPrev(
+  prev: { weight?: number; reps?: number },
+  ex: { hideWeight?: boolean; hideReps?: boolean },
+): string {
+  const parts: string[] = [];
+  if (!ex.hideWeight && prev.weight != null) parts.push(`${prev.weight} lb`);
+  if (!ex.hideReps && prev.reps) parts.push(`${prev.reps} reps`);
+  return parts.join(' · ');
 }

@@ -20,6 +20,8 @@ export interface Exercise {
   notes?: string;
   startingWeight?: number | null;
   muscleGroups?: string[];
+  hideWeight?: boolean;
+  hideReps?: boolean;
 }
 
 export interface DayDef {

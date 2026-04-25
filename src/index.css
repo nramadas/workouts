@@ -141,3 +141,12 @@ input[type='number']::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+/* Prevent iOS Safari from zooming on input focus. The zoom triggers when the
+ * input's computed font-size is below 16px. Using 16px floors avoids it
+ * without disabling user pinch-zoom (which would hurt accessibility). */
+input,
+select,
+textarea {
+  font-size: 16px;
+}
